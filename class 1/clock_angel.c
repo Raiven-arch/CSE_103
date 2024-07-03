@@ -2,25 +2,14 @@
 
 int main ()
 {
-    int hour, minute, angle;
+    int hour, minute;
 
     printf("Enter time(hour:minute) in 12 hour format: ");
     scanf("%d:%d", &hour, &minute);
 
-    int hour_angel = hour * 30;
-    int minute_angel = minute * 6;
+    int hour_angle = (hour * 30) + (.5 * minute);
+    int minute_angle = minute * 6;
 
-    printf("Angel of hour: %d\nAngel of minute: %d\n", hour_angel, minute_angel);
-
-    /*int angel = hour_angel - minute_angel;
-    
-    if (hour_angel - minute_angel < 180){
-        angle = 360 - hour_angel - minute_angel;
-    } else {
-        angle = angle;
-    }
-    
-    printf("Angel: %d", angle);*/
- 
+    printf("Angel of hour: %d\nAngel of minute: %d\n", hour_angle, minute_angle);
     return 0;
 }
