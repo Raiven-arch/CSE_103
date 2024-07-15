@@ -1,4 +1,4 @@
-//This program prints highest temperature of 7 days.
+//This program prints number of days with comfortable temperature(22 - 26C) over a period of 7 days.
 
 #include <stdio.h>
 
